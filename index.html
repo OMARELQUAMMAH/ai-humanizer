@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Humanizer - Make Text Sound Natural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔄 AI Humanizer</h1>
+            <p class="subtitle">Transform AI-generated text into natural, human-sounding content</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <label for="inputText">Paste your AI text here:</label>
+                <textarea id="inputText" placeholder="Example: Furthermore, it is imperative that we utilize these resources to optimize our operational efficiency..."></textarea>
+            </div>
+
+            <button id="humanizeBtn" onclick="humanizeText()">
+                <span class="btn-text">Humanize Text</span>
+                <span class="loading-spinner" style="display: none;">⏳ Processing...</span>
+            </button>
+
+            <div class="output-section">
+                <label for="outputText">Humanized version:</label>
+                <textarea id="outputText" placeholder="Your natural-sounding text will appear here..." readonly></textarea>
+            </div>
+        </div>
+
+        <footer>
+            <p>Powered by DeepSeek AI • 100% Free • No limitations</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
